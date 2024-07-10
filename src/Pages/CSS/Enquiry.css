@@ -1,0 +1,149 @@
+.enquiry-container {
+  padding: 0;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-height: 100vh; */
+}
+
+.raise-enquiry {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.raise-enquiry h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.raise-enquiry .form-group {
+  margin-bottom: 20px;
+}
+
+.raise-enquiry .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.raise-enquiry,
+.raise-enquiry input,
+.raise-enquiry textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+.raise-enquiry input:focus,
+.raise-enquiry textarea:focus {
+  border-color: #30308f;
+  outline: none;
+}
+
+.raise-enquiry textarea {
+  height: 150px;
+}
+
+.raise-enquiry button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #00008B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.raise-enquiry button:hover {
+  background-color: #0056b3;
+}
+
+.back {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+}
+
+.back a {
+  text-decoration: none;
+  color: #333;
+}
+
+.back i {
+  font-size: 32px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .raise-enquiry {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  .raise-enquiry h2 {
+    font-size: 20px;
+  }
+
+  .raise-enquiry .form-group {
+    margin-bottom: 15px;
+  }
+
+  .raise-enquiry input,
+  .raise-enquiry textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .raise-enquiry button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Media query for medium screens */
+@media (max-width: 768px) {
+  .raise-enquiry {
+    margin: 40px auto;
+    padding: 15px;
+    max-width: 80%;
+  }
+
+  .raise-enquiry h2 {
+    font-size: 22px;
+  }
+
+  .raise-enquiry .form-group {
+    margin-bottom: 18px;
+  }
+
+  .raise-enquiry input,
+  .raise-enquiry textarea {
+    padding: 11px;
+    font-size: 15px;
+  }
+
+  .raise-enquiry button {
+    padding: 11px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,165 @@
+/* Navbar.css */
+body {
+    margin: 0;
+    padding-top: 15px; /* Adjust this value based on the height of your fixed navbar */
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF8E1; /* Light Yellow */
+    color: #556B2F; /* Dark Olive Green */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above other content */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8B4513; /* Saddle Brown */
+    margin: 0;
+  }
+  
+  .nav-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+  }
+  
+  .nav-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-menu li a {
+    font-size: 1.3rem;
+    font-weight: 550;
+    text-decoration: none;
+    color: #556B2F; /* Dark Olive Green */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover,
+  .nav-menu li a.active {
+    color: #FF4500; /* Orange Red */
+  }
+  
+  .login-button {
+    background-color: #556B2F; /* Dark Olive Green */
+    color: #ffffff; /* White */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .logout-button {
+    background-color: #b11f1f; 
+    color: #ffffff; /* White */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #FF4500; /* Orange Red */
+  }
+  
+  .enq-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .enq-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .enq-img {
+    width: 40px; /* Adjust the width of the enquiry image */
+    height: 40px; /* Ensure height is consistent as well */
+    margin: 0 4px; /* Adjusted margin to align properly */
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center; /* Align items to the center */
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: transparent; /* Initial transparent background */
+    }
+  
+    .nav-menu.open {
+      display: flex;
+      align-items: center; /* Center align items */
+      justify-content: center; /* Center align items */
+      background-color: #FFF8E1; /* Light Yellow */
+    }
+  
+    .nav-menu.open li {
+      margin: 0;
+      width: 100%;
+      text-align: center; /* Center align text */
+    }
+  
+    .nav-menu.open li a {
+      padding: 10px 20px;
+      width: 100%;
+    }
+  
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      color: #FF4500; /* Orange Red */
+    }
+  
+    .hamburger-menu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+  

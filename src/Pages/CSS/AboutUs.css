@@ -1,0 +1,172 @@
+.aboutUs-heading {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutUs-heading h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* About Us Container */
+.aboutUs-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFDAB9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Paragraph Styles */
+.aboutUs-container .para {
+    line-height: 1.6;
+}
+
+.aboutUs-container p {
+    margin-bottom: 15px;
+}
+
+/* Link Styles */
+.aboutUs-container a {
+    text-decoration: none;
+    color: #00008B;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.aboutUs-container a:hover {
+    color: #830202;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+
+/* Team Member Styles */
+.founder-cofounder .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.team-member-row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.member-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.member {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member:hover {
+    transform: scale(1.1);
+}
+
+.aboutus-page footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.aboutus-page footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .aboutUs-container {
+        max-width: 85%;
+    }
+    
+    .founder-cofounder {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .team-member-row {
+        flex-direction: row; /* Change direction to row for smaller screens */
+        flex-wrap: wrap; /* Allow items to wrap onto multiple rows */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .member-container {
+        width: 45%; /* Set width to fit at least 2 in a row */
+        margin: 0 5px 20px 5px; /* Add space between member containers */
+    }
+
+    .member {
+        width: 100%; /* Take full width of the container */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .member-info {
+        text-align: center; /* Center text */
+    }
+
+    .member-info h4 {
+        font-size: 1rem; /* Adjust font size for member name */
+    }
+
+    .member-info h5 {
+        font-size: 0.8rem; /* Adjust font size for member title */
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .aboutUs-heading h1 {
+        font-size: 2rem;
+    }
+
+    .aboutUs-container .para {
+        font-size: 0.9rem;
+    }
+
+    .member {
+        width: 80px;
+        height: 80px;
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,42 @@
+.breadcrum {
+    padding: 0;
+    padding-top: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #7e2210;
+    background: #e6f5cd;
+    text-transform: capitalize;
+  }
+
+  .breadcrum a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from the parent element */
+}
+
+  .breadcrum a:hover {
+    color: inherit; /* Prevent color change on hover */
+}
+
+  
+  .breadcrum img {
+    width: 12px; /* Adjust the width of the arrow image */
+    margin: 0 8px; /* Add some margin around the arrow image */
+  }
+  
+  .breadcrum img:last-child {
+    margin-right: 0; /* Remove right margin for the last arrow image */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .breadcrum {
+      flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    }
+  
+    .breadcrum img {
+      margin-bottom: 6px; /* Add some space between each item */
+    }
+  }
+  

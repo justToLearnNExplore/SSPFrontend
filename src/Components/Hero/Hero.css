@@ -1,0 +1,107 @@
+.hero-container {
+  padding: 40px;
+  padding-top: 70px;
+}
+
+.hero {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  overflow: hidden; /* Hide overflow to prevent unwanted scrollbars */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../Assets/bg_img.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.68;
+  filter: blur(2px); /* Adjust the blur radius as needed */
+  z-index: -1; /* Ensure the background is behind the content */
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 40px; /* Increase padding for better spacing */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h2 {
+  color: #800000;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.text {
+  color: #222222;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.left p {
+  color: #0a0a0a;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+.home-left-para p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #1d2217;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Add some curvature to the video */
+}
+
+.logoanime-video {
+  width: 450px; /* Set a specific width for the video */
+  height: 450px;
+}
+
+/* Media Query for Responsive Layout */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr; /* Switch to single column layout on small screens */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .left {
+    padding: 0; /* Remove left padding for better alignment */
+  }
+
+  .left h2 {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
+  .left p {
+    font-size: 0.875rem; /* Decrease font size for smaller screens */
+  }
+
+  .logoanime-video {
+    width: 100%; /* Make the video full width on small screens */
+  }
+}

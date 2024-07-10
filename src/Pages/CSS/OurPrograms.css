@@ -1,0 +1,67 @@
+.prog-container {
+  height: 91vh;
+  margin-top: 15px;
+  padding: 20px; /* Equal padding from all sides */
+  background-color: #FFDAB9;
+}
+
+.programs {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Gap between cards */
+  justify-content: space-around; /* Distribute space around cards */
+}
+
+.prog-card {
+  width: calc(33.33% - 40px); /* Three items per row on larger screens, accounting for padding */
+  height: 400px; /* Adjust height as needed */
+  background-color: #FFF8E1;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 20px; /* Equal padding inside the card */
+}
+
+.prog-card:hover {
+  transform: translateY(-5px);
+}
+
+.our-prog-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.our-prog-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #7e2210;
+}
+
+.our-prog-content p {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .prog-container {
+    height: 94vh;
+    padding: 20px; /* Equal padding from all sides */
+    background-color: #FFDAB9;
+  }
+
+  .prog-card {
+    flex: 1 1 calc(100% - 40px); /* One card per row on smaller screens */
+    height: 200px; /* Adjust height to content */
+  }
+
+  .prog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+}

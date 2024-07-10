@@ -1,0 +1,74 @@
+.games-container {
+  padding: 20px;
+  padding-top: 40px;
+  background: #d7f1ad;
+  min-height: 94vh; /* Ensure the container takes up the full viewport height */
+}
+
+.categories {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-card {
+  width: calc(50% - 10px); /* Two items per row on larger screens */
+  height: 145px; /* Adjust height as needed */
+  background-color: #e6f5cd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.category-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.category-content p {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .games-container {
+    margin-top: 20px;
+    padding-top: 60px;
+    min-height: 94vh; /* Ensure the container takes up the full viewport height */
+  }
+
+  .categories {
+      margin-top: 30px;
+  }
+
+  .category-card {
+      width: calc(50% - 10px); /* Two items per row on smaller screens */
+      height: auto; /* Adjust height to fit content */
+  }
+
+  .category-content p {
+      font-size: 0.9rem;
+      color: #666;
+  }
+
+  .category-card:hover {
+      transform: translateY(-5px); /* Maintain hover effect on smaller screens */
+  }
+}
